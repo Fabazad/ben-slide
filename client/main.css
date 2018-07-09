@@ -1,0 +1,35 @@
+body {
+  width: 1078px;
+  height: 639px;
+}
+#left-video{
+	position: fixed;
+	width: 32%;
+	left:0;
+}
+#right-video{
+	margin-left: 67%;
+	width: 32%;
+}
+video{
+	position: fixed;
+	width:100%;
+	top: 0;
+	right: 0;
+	height: 100%
+}
+
+.side-asset{
+	position:fixed;
+	height: 100%;
+	z-index: 999;
+	top:0;
+	width: 32%;
+	opacity: 0;
+}
+.side-asset.right{
+	right: 0;
+}
+.side-asset.left{
+	left: 0;
+}

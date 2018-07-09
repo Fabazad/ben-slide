@@ -1,0 +1,23 @@
+<head>
+  <title>ben-slide</title>
+</head>
+
+<body id="body">
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#if showLeftAsset}}
+  <img class="side-asset left" src="/images/{{ leftAsset }}"/>
+  <video  src="/images/{{ rightAsset }}" class="side-asset right"></video>
+  {{/if}}
+
+  <video  src="/images/{{ mainVideo }}" class="main-video"></video>
+
+  {{#if showRightAsset}}
+  <img class="side-asset right" src="/images/{{ rightAsset }}"/>
+  <video  src="/images/{{ rightAsset }}" class="side-asset right"></video>
+  {{/if}}
+</template>
+
